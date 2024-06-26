@@ -6,6 +6,8 @@ const Movie = require('../Models/movieModel')
 
 exports.getAllMovies = async (req, res) => {
     try {
+        console.log(req.query); //receives extra quries from url for filtering
+
         const movies = await Movie.find();
     
         res.status(200).json({
