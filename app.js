@@ -37,7 +37,7 @@ app.use((req, res, next) => {
     next();
 })
 
-// Route http method + url
+// Route http method + url.
 app.get('/', (req, res) => {
     // res.status(200).send('Hello from express server');
     res.status(200).json({ message: 'Hello world', status: 200 });
